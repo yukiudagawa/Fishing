@@ -1827,7 +1827,7 @@ GameObject:
   - component: {fileID: 2056727155}
   - component: {fileID: 2056727154}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2248,7 +2248,7 @@ GameObject:
   - component: {fileID: 6600059380971989034}
   - component: {fileID: 924508673336707016}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Fishing Rod Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,7 +2270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9024223969376635439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.354, y: 1.231, z: 1.102}
+  m_LocalPosition: {x: -0.354, y: 0.899, z: 1.102}
   m_LocalScale: {x: 0.21, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2384,7 +2384,7 @@ GameObject:
   - component: {fileID: 898657505124781871}
   - component: {fileID: 1834654736385113674}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Fishing Rod Bait
   m_TagString: Test
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
