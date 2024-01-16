@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class Detector : MonoBehaviour
+{
+    public string targetTag;
+    public UnityEvent<GameObject> OnEnterEvent;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == targetTag)
+        {
+            Debug.Log("Bait is in! (Success)");
+            //OnEnterEvent.Invoke(other.gameObject);
+        }
+    }
+}
