@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class EagleMove : MonoBehaviour
+public class Movement_1 : MonoBehaviour
 {
     private Rigidbody rb;
     private Transform objectTransform;
