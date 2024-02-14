@@ -8,8 +8,8 @@ public class Movement_1 : MonoBehaviour
 {
     private Rigidbody rb;
     private Transform objectTransform;
-    [SerializeField] private float Distance;
-    [SerializeField] private float Speed;
+    [SerializeField] public float Distance;
+    [SerializeField] public float Speed;
     private float axis_x;
     private float axis_z;
     private Vector3 startPosition;
