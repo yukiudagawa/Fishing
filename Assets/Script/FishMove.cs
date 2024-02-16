@@ -14,10 +14,23 @@ public class FishMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.Find("Rod").transform; //追いかける対象のオブジェクトのtransformを取得
-        rigidbody = GetComponent<Rigidbody>(); //Rigidbodyを取得
-        rigidbody.constraints = RigidbodyConstraints.FreezeRotation; //オブジェクトの回転を防ぐ
-        agent = GetComponent<NavMeshAgent>(); //NavMeshAgentを取得
+        agent = this.gameObject.GetComponent<NavMeshAgent>();
+    }
+
+    public void OnDetectObject(Collider collider)
+    {
+        if(collider.gameObject.tag == "Rod")
+        {
+            agent.destination = collider.gameObject.transform.position;
+        }
+    }
+
+    public void OnLoseObject(Collider collider)
+    {
+        if (collider.gameObject.tag == "Rod")
+        {
+            agent.destination = this.gameObject.transform.position;
+        }
     }
 
     // Update is called once per frame
