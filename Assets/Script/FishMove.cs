@@ -9,7 +9,6 @@ public class FishMove : MonoBehaviour
 {
     private Transform target;
     private NavMeshAgent agent;
-    Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
