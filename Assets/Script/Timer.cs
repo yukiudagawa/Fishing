@@ -23,7 +23,8 @@ public class Timer : MonoBehaviour
         timeTexts.text = "Time Limit:" + retime.ToString();
         if (retime <= 0)
         {
-            //SceneManager.LoadScene("Result");
+            //ChangeSceneManager.Instance.LoadScene(ChangeSceneManager.SCENE.ResultScene);
+            SceneManager.LoadScene(2);
         }
     }
 }
