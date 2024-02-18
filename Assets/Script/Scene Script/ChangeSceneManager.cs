@@ -14,9 +14,9 @@ public class ChangeSceneManager : MonoBehaviour
 
     public enum SCENE
     {
-        StartScreen,
-        SampleVR,
-        ResultScreen
+        StartScene,
+        FishingScene,
+        ResultScene
     }
 
     public void LoadScene(SCENE scene)

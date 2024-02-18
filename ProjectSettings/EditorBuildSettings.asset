@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
+    path: Assets/Scenes/MainScenes/StartScene.unity
     guid: d70147e79fba03b4fbdfe020c675a91b
   - enabled: 1
-    path: Assets/Scenes/SampleVR.unity
+    path: Assets/Scenes/MainScenes/FishingScene.unity
     guid: 847ef711dcebe3445b95328c9e6f5c8f
   - enabled: 1
-    path: Assets/Scenes/ResultScreen.unity
+    path: Assets/Scenes/MainScenes/ResultScene.unity
     guid: 4480ce5683ebbb04e8a20734046e479a
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 887b3ebbc84bb804ea3f9038d1eb918e, type: 2}
