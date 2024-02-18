@@ -12,10 +12,15 @@ public class ChangeSceneManager : MonoBehaviour
         Instance = this;
     }
 
-    public enum Scene
+    public enum SCENE
     {
-        Start,
-        GameLevel,
-        Result
+        StartScreen,
+        SampleVR,
+        ResultScreen
+    }
+
+    public void LoadScene(SCENE scene)
+    {
+        SceneManager.LoadScene(scene.ToString());
     }
 }
