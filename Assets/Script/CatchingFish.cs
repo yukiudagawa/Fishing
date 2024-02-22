@@ -19,7 +19,20 @@ public class CatchingFish : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            Destroy(this.gameObject);
+            StartCoroutine(ChangePos());
+            //Destroy(this.gameObject);
         }
+    }
+
+    private IEnumerator ChangePos()
+    {
+        gameObject.transform.Find("shadow").gameObject.SetActive(false);
+        yield return new WaitForSeconds(3);
+        Vector3 pos = transform.position;
+        pos.x = Random.Range(-40, 40);
+        pos.y = 0;
+        pos.z = Random.Range(-40, 40);
+        transform.position = pos;
+        gameObject.transform.Find("shadow").gameObject.SetActive(true);
     }
 }
