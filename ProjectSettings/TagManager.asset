@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Rod
+  - Ball
   layers:
   - Default
   - TransparentFX
