@@ -2992,9 +2992,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b2f912ed6b28246b7e7af89dc04818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: b8174d3db24a0d44cb706010626ec94c, type: 3}
+  image:
+  - {fileID: 2800000, guid: b8174d3db24a0d44cb706010626ec94c, type: 3}
+  - {fileID: 2800000, guid: 5539e0279499c184bb66b616a1a69f81, type: 3}
+  - {fileID: 2800000, guid: 7c011a123b0bee841882307a852be288, type: 3}
+  - {fileID: 2800000, guid: 308e9c77c77354a46bb4e6321ee39b22, type: 3}
   catchingFish: {fileID: 0}
   fishGameObject: {fileID: 879846770}
+  ran: 0
 --- !u!114 &1937195659
 MonoBehaviour:
   m_ObjectHideFlags: 0
