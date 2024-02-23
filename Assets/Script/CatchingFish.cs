@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CatchingFish : MonoBehaviour
 {
+    public int catchfish = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,11 @@ public class CatchingFish : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public int CatchFish()
+    {
+        return catchfish;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,7 +33,9 @@ public class CatchingFish : MonoBehaviour
     private IEnumerator ChangePos()
     {
         gameObject.transform.Find("shadow").gameObject.SetActive(false);
+        catchfish = 1;
         yield return new WaitForSeconds(3);
+        catchfish = 0;
         Vector3 pos = transform.position;
         pos.x = Random.Range(-40, 40);
         pos.y = 0;
