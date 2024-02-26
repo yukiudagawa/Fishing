@@ -1805,6 +1805,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9033097161165353770, guid: 10a448e4af8963f43b46cc0ddb47499c, type: 3}
   m_PrefabInstance: {fileID: 9033097160423954008}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &879846771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5610266741545908310, guid: 10a448e4af8963f43b46cc0ddb47499c, type: 3}
+  m_PrefabInstance: {fileID: 9033097160423954008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879846770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1118f677edd61c48b46fe8e684a3c2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &974172214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,8 +2353,8 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398430872}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
@@ -2660,7 +2671,7 @@ BoxCollider:
   m_GameObject: {fileID: 1758234509}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 65.88029, y: 26.128483, z: 65.88029}
   m_Center: {x: 0, y: 13.064241, z: 0}
@@ -3220,7 +3231,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 5539e0279499c184bb66b616a1a69f81, type: 3}
   - {fileID: 2800000, guid: 7c011a123b0bee841882307a852be288, type: 3}
   - {fileID: 2800000, guid: 308e9c77c77354a46bb4e6321ee39b22, type: 3}
-  catchingFish: {fileID: 0}
+  catchingFish: {fileID: 879846771}
   fishGameObject: {fileID: 879846770}
   ran: 0
 --- !u!114 &1937195659
