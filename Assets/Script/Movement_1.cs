@@ -10,7 +10,6 @@ public class Movement_1 : MonoBehaviour
     private Transform objectTransform;
     [SerializeField] public float Distance;
     [SerializeField] public float Speed;
-    [SerializeField] public int leastX;
     private float axis_x;
     private float axis_z;
     private Vector3 startPosition;
@@ -26,7 +25,6 @@ public class Movement_1 : MonoBehaviour
         axis_z = Mathf.Cos(objectTransform.eulerAngles.y * Mathf.Deg2Rad);   //cosine for z
 
         startPosition = objectTransform.position;
-        startPosition.x = leastX;
     }
 
     // Update is called once per frame
