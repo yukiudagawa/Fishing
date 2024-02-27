@@ -7,6 +7,8 @@ TagManager:
   - Floor
   - Rod
   - Ball
+  - Meteor
+  - Fish
   layers:
   - Default
   - TransparentFX
