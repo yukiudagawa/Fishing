@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
@@ -26,6 +27,9 @@ public class Spawner : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        other.transform.SetPositionAndRotation(new Vector3(areaCollider.bounds.min.x, height, Random.Range(areaCollider.bounds.min.z, areaCollider.bounds.max.z)), Quaternion.Euler(new Vector3(0, 90, 0)));
+        if (spawnedObjects.Contains(other.gameObject))
+        {
+            other.transform.SetPositionAndRotation(new Vector3(areaCollider.bounds.min.x, height, Random.Range(areaCollider.bounds.min.z, areaCollider.bounds.max.z)), Quaternion.Euler(new Vector3(0, 90, 0)));
+        }
     }
 }
