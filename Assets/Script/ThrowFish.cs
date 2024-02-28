@@ -20,7 +20,7 @@ public class ThrowFish : MonoBehaviour
     private void Toggle(InputAction.CallbackContext context)
     {
         Debug.Log("B pressed");
-        if (ScoreViewmodel.totalFish <= 3)
+        if (ScoreViewmodel.totalFish < 3)
         {
             ScoreViewmodel.totalFish += 1;
         }
