@@ -79,6 +79,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ThrowFish",
+                    "type": "Button",
+                    "id": "c01e97a8-ae05-48e0-a955-68a045b6550a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -112,6 +121,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Toggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7d942f23-81f8-4a0c-8df5-7f22e0e68844",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowFish",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

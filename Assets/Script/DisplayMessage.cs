@@ -19,7 +19,7 @@ public class DisplayMessage : MonoBehaviour
     {
         parentImage = GetComponent<RawImage>();
         temp = parentImage.color;
-        ScoreViewmodel.totalFish = 2;
+        ScoreViewmodel.totalFish = 3;
         //GameObject obj = GameObject.Find("Fish");
         //fishScript = obj.GetComponent<CatchingFish>();
     }
