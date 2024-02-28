@@ -97,9 +97,11 @@ GameObject:
   - component: {fileID: 9033097161165353771}
   - component: {fileID: 9033097161165353774}
   - component: {fileID: 5610266741545908310}
+  - component: {fileID: 2465876437761330693}
+  - component: {fileID: 7289999062725355159}
   m_Layer: 0
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +129,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9033097161165353770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fa141792d7b37d42aee9d47cc48e50f, type: 3}
   m_Name: 
@@ -141,7 +143,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9033097161165353770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -181,3 +183,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1118f677edd61c48b46fe8e684a3c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  catchfish: 0
+  image:
+  - {fileID: 2800000, guid: b8174d3db24a0d44cb706010626ec94c, type: 3}
+  - {fileID: 2800000, guid: 5539e0279499c184bb66b616a1a69f81, type: 3}
+  - {fileID: 2800000, guid: 7c011a123b0bee841882307a852be288, type: 3}
+  - {fileID: 2800000, guid: 308e9c77c77354a46bb4e6321ee39b22, type: 3}
+  fishGameObject: {fileID: 9033097161165353770}
+  ran: 0
+--- !u!54 &2465876437761330693
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033097161165353770}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 4
+  m_CollisionDetection: 0
+--- !u!114 &7289999062725355159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033097161165353770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa58b1b9473dba74bb4f667629d52112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance: 750
+  Speed: 4

@@ -6,6 +6,8 @@ public class ScoreViewmodel : MonoBehaviour
 {
     public static int totalScore;
 
+    public static int totalFish;
+
 /*    public int getTotalScore()
     {
         return totalScore;
