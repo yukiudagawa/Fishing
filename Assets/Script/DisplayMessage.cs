@@ -50,7 +50,7 @@ public class DisplayMessage : MonoBehaviour
         }
         else
         {
-            ran = Random.Range(51, 100);
+            ran = Random.Range(0, 100);
             if (ran <= 10)
             {
                 imageNum = 3;
